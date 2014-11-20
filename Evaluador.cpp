@@ -26,95 +26,83 @@ void evaluar()
     n23->hijo_izq = n24;
 
 
-    NodoArbolNArio *nn11 = new NodoArbolNArio(1);
-    NodoArbolNArio *nn12 = new NodoArbolNArio(2);
-    NodoArbolNArio *nn13 = new NodoArbolNArio(3);
-    NodoArbolNArio *nn14 = new NodoArbolNArio(4);
-    NodoArbolNArio *nn15 = new NodoArbolNArio(5);
-    NodoArbolNArio *nn16 = new NodoArbolNArio(6);
-    NodoArbolNArio *nn17 = new NodoArbolNArio(7);
-
-    nn11->hijos.push_back(nn12);
-    nn11->hijos.push_back(nn13);
-    nn11->hijos.push_back(nn14);
-
-    nn13->hijos.push_back(nn15);
-    nn13->hijos.push_back(nn16);
-
-    nn16->hijos.push_back(nn17);
-
-
-    NodoArbolNArio *nn21 = new NodoArbolNArio(10);
-    NodoArbolNArio *nn22 = new NodoArbolNArio(20);
-    NodoArbolNArio *nn23 = new NodoArbolNArio(30);
-    NodoArbolNArio *nn24 = new NodoArbolNArio(40);
-
-    nn21->hijos.push_back(nn22);
-    nn21->hijos.push_back(nn23);
-
-    nn23->hijos.push_back(nn24);
-
-    cout<<"Ejercicio suma(NodoArbolBinario* raiz):\t\t\t";
+    cout<<"Ejercicio suma:\t\t\t";
     if(suma(n11) == 15 && suma(n21) == 100)
     {
-        nota++;
+        nota+=2;
         cout<<"Correcto"<<endl;
     }else
     {
         cout<<"Incorrecto"<<endl;
     }
 
-    cout<<"Ejercicio suma(NodoArbolNArio* raiz):\t\t\t";
-    if(suma(nn11) == 28 && suma(nn21) == 100)
-    {
-        nota++;
-        cout<<"Correcto"<<endl;
-    }else
-    {
-        cout<<"Incorrecto"<<endl;
-    }
-
-    cout<<"Ejercicio cantidadNodos(NodoArbolBinario* raiz):\t";
+    cout<<"Ejercicio cantidadNodos:\t";
     if(cantidadNodos(n11) == 5 && cantidadNodos(n21) == 4)
     {
-        nota++;
+        nota+=2;
         cout<<"Correcto"<<endl;
     }else
     {
         cout<<"Incorrecto"<<endl;
     }
 
-    cout<<"Ejercicio cantidadNodos(NodoArbolNArio* raiz):\t\t";
-    if(cantidadNodos(nn11) == 7 && cantidadNodos(nn21) == 4)
-    {
-        nota++;
-        cout<<"Correcto"<<endl;
-    }else
-    {
-        cout<<"Incorrecto"<<endl;
-    }
-
-
-    cout<<"Ejercicio promedio(NodoArbolBinario* raiz):\t\t";
+    cout<<"Ejercicio promedio:\t\t";
     if(promedio(n11) == 3 && promedio(n21) == 25)
     {
-        nota++;
+        nota+=2;
         cout<<"Correcto"<<endl;
     }else
     {
         cout<<"Incorrecto"<<endl;
     }
 
-    cout<<"Ejercicio promedio(NodoArbolNArio* raiz):\t\t";
-    if(promedio(nn11) == 4 && promedio(nn21) == 25)
+    NodoArbolBinario *n31 = new NodoArbolBinario(10);
+    NodoArbolBinario *n32 = new NodoArbolBinario(5);
+    NodoArbolBinario *n33 = new NodoArbolBinario(15);
+    NodoArbolBinario *n34 = new NodoArbolBinario(8);
+
+    n31->hijo_izq = n32;
+    n31->hijo_der = n33;
+    n32->hijo_der = n34;
+
+    NodoArbolBinario *n41 = new NodoArbolBinario(100);
+    NodoArbolBinario *n42 = new NodoArbolBinario(50);
+    NodoArbolBinario *n43 = new NodoArbolBinario(75);
+    NodoArbolBinario *n44 = new NodoArbolBinario(10);
+    NodoArbolBinario *n45 = new NodoArbolBinario(5);
+    NodoArbolBinario *n46 = new NodoArbolBinario(200);
+    NodoArbolBinario *n47 = new NodoArbolBinario(150);
+
+    n41->hijo_izq = n42;
+    n41->hijo_der = n46;
+
+    n42->hijo_izq = n44;
+    n42->hijo_der = n43;
+
+    n43->hijo_izq = n45;
+
+    n46->hijo_izq = n47;
+
+    cout<<"Ejercicio cuantosPasos:\t\t";
+    if(cuantosPasos(n31,8) == 3 && cuantosPasos(n31,15) == 2 && cuantosPasos(n31,10) == 1
+        && cuantosPasos(n41,5) == 4 && cuantosPasos(n41,150) == 3 && cuantosPasos(n41,200) == 2 && cuantosPasos(n41,100) == 1)
     {
-        nota++;
+        nota+=3;
         cout<<"Correcto"<<endl;
     }else
     {
         cout<<"Incorrecto"<<endl;
     }
 
+    cout<<"Ejercicio esAVL:\t\t";
+    if(!esAVL(n11) && !esAVL(n21) && esAVL(n31) && esAVL(n41) && esAVL(n32) && !esAVL(n12) && esAVL(n42))
+    {
+        nota+=4;
+        cout<<"Correcto"<<endl;
+    }else
+    {
+        cout<<"Incorrecto"<<endl;
+    }
 
-    cout<<endl<<"Nota: "<<nota<<"/6"<<endl;
+    cout<<endl<<"Nota: "<<nota<<"/13"<<endl;
 }

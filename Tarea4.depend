@@ -57,3 +57,27 @@
 1409600362 source:/home/turupawn/Projects/Codeblocks/Clases/EstructuraDeDatos/Tarea4/NodoArbolNArio.cpp
 	"NodoArbolNArio.h"
 
+1416437869 source:/home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/Evaluador.cpp
+	"Evaluador.h"
+
+1416436079 /home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/Evaluador.h
+	"NodoArbolBinario.h"
+	<iostream>
+
+1416434706 /home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/NodoArbolBinario.h
+
+1416434706 /home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/NodoArbolNArio.h
+	<list>
+
+1416434706 source:/home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/NodoArbolBinario.cpp
+	"NodoArbolBinario.h"
+
+1416434706 source:/home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/NodoArbolNArio.cpp
+	"NodoArbolNArio.h"
+
+1416437524 source:/home/turupawn/Projects/Codeblocks/Clases/Estructura/Tarea4/main.cpp
+	"NodoArbolBinario.h"
+	"Evaluador.h"
+	<iostream>
+	<list>
+
