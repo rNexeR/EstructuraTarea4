@@ -81,3 +81,21 @@
 	<iostream>
 	<list>
 
+1422494675 source:/home/turupawn/Projects/Clases/Estructura/Tarea4/Evaluador.cpp
+	"Evaluador.h"
+
+1422494554 /home/turupawn/Projects/Clases/Estructura/Tarea4/Evaluador.h
+	"NodoArbolBinario.h"
+	<iostream>
+
+1422475047 /home/turupawn/Projects/Clases/Estructura/Tarea4/NodoArbolBinario.h
+
+1422475047 source:/home/turupawn/Projects/Clases/Estructura/Tarea4/NodoArbolBinario.cpp
+	"NodoArbolBinario.h"
+
+1422494551 source:/home/turupawn/Projects/Clases/Estructura/Tarea4/main.cpp
+	"NodoArbolBinario.h"
+	"Evaluador.h"
+	<iostream>
+	<list>
+

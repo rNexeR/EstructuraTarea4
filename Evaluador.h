@@ -16,6 +16,6 @@ int promedio(NodoArbolBinario* raiz);
 
 int cuantosPasos(NodoArbolBinario* raiz,int num);
 
-bool esAVL(NodoArbolBinario* raiz);
+int sumaHojas(NodoArbolBinario* raiz);
 
 #endif // EVALUADOR_H

@@ -94,8 +94,9 @@ void evaluar()
         cout<<"Incorrecto"<<endl;
     }
 
-    cout<<"Ejercicio esAVL:\t\t";
-    if(!esAVL(n11) && !esAVL(n21) && esAVL(n31) && esAVL(n41) && esAVL(n32) && !esAVL(n12) && esAVL(n42))
+    cout<<"Ejercicio sumaHojas:\t\t";
+    if(sumaHojas(n11)==3 && sumaHojas(n12)==2 && sumaHojas(n13)==1
+        && sumaHojas(n41)==3 && sumaHojas(n46)==1)
     {
         nota+=4;
         cout<<"Correcto"<<endl;

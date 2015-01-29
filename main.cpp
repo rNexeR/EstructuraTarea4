@@ -33,9 +33,9 @@ int cuantosPasos(NodoArbolBinario* raiz,int num)
 }
 
 //Devuelve verdadero si el arbol dado esta ordenado estilo AVL, de lo contrario devuelve falso.
-bool esAVL(NodoArbolBinario* raiz)
+int sumaHojas(NodoArbolBinario* raiz)
 {
-    return false;
+    return -1;
 }
 
 int main ()
