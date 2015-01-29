@@ -36,8 +36,6 @@
 		<Unit filename="Evaluador.h" />
 		<Unit filename="NodoArbolBinario.cpp" />
 		<Unit filename="NodoArbolBinario.h" />
-		<Unit filename="NodoArbolNArio.cpp" />
-		<Unit filename="NodoArbolNArio.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
