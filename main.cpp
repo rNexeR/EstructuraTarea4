@@ -32,7 +32,7 @@ int cuantosPasos(NodoArbolBinario* raiz,int num)
     return -1;
 }
 
-//Devuelve verdadero si el arbol dado esta ordenado estilo AVL, de lo contrario devuelve falso.
+//Devuelve la suma de todas las hojas del arbol con raiz dada
 int sumaHojas(NodoArbolBinario* raiz)
 {
     return -1;
