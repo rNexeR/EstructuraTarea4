@@ -32,7 +32,7 @@ int cuantosPasos(NodoArbolBinario* raiz,int num)
     return -1;
 }
 
-//Devuelve la suma de todas las hojas del arbol con raiz dada
+//Devuelve la cantidad de hojas que tiene el arbol con la raiz dada
 int sumaHojas(NodoArbolBinario* raiz)
 {
     return -1;
