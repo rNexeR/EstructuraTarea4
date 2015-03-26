@@ -99,3 +99,21 @@
 	<iostream>
 	<list>
 
+1427331013 source:/home/rnexer/Programacion 3/ExamenPrueba/EstructuraTarea4/Evaluador.cpp
+	"Evaluador.h"
+
+1427331013 /home/rnexer/Programacion 3/ExamenPrueba/EstructuraTarea4/Evaluador.h
+	"NodoArbolBinario.h"
+	<iostream>
+
+1427331013 /home/rnexer/Programacion 3/ExamenPrueba/EstructuraTarea4/NodoArbolBinario.h
+
+1427375280 source:/home/rnexer/Programacion 3/ExamenPrueba/EstructuraTarea4/main.cpp
+	"NodoArbolBinario.h"
+	"Evaluador.h"
+	<iostream>
+	<list>
+
+1427331013 source:/home/rnexer/Programacion 3/ExamenPrueba/EstructuraTarea4/NodoArbolBinario.cpp
+	"NodoArbolBinario.h"
+

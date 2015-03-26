@@ -7,19 +7,29 @@ using namespace std;
 //Devuelve la suma de todos los numeros del arbol con la raiz dada.
 int suma(NodoArbolBinario* raiz)
 {
-    return -1;
+    int sumar = 0;
+    if (raiz!=NULL){
+        sumar += raiz->num;
+        sumar+=suma(raiz->hijo_der)+suma(raiz->hijo_izq);
+    }
+    return sumar;
 }
 
 //Devuelve la cantidad de nodos que tiene el arbol con la raiz dada.
 int cantidadNodos(NodoArbolBinario* raiz)
 {
-    return -1;
+    int cant = 0;
+    if (raiz!=NULL){
+        cant++;
+        cant+=cantidadNodos(raiz->hijo_der)+cantidadNodos(raiz->hijo_izq);
+    }
+    return cant;
 }
 
 //Devuelve el promedio de los numeros que tiene el arbol con la raiz dada.
 int promedio(NodoArbolBinario* raiz)
 {
-    return -1;
+    return suma(raiz)/cantidadNodos(raiz);
 }
 
 //Devuelve la cantidad de pasos que tiene que dar el algoritmo para llegar a un numero dado.
@@ -29,13 +39,18 @@ int promedio(NodoArbolBinario* raiz)
 //Para llegar al nodo 15 se ocupa 1 paso (15)
 int cuantosPasos(NodoArbolBinario* raiz,int num)
 {
-    return -1;
+    int pasos = 0;
+    if (raiz!=NULL){
+
+    }
+    return pasos;
 }
 
 //Devuelve la cantidad de hojas que tiene el arbol con la raiz dada
 int sumaHojas(NodoArbolBinario* raiz)
 {
-    return -1;
+
+    return 0;
 }
 
 int main ()
